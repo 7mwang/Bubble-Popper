@@ -9,7 +9,7 @@
 </nav>
 <body id = "body">
 <div class = "tab1" id = "tab1">
-<img src = "/images/bubble.png" id = "Bubble" class = "BubbleImage" draggable="false">
+<img src = "/Bubble-Popper/images/bubble.png" id = "Bubble" class = "BubbleImage" draggable="false">
 </div>
 <div class = "tab2" id = "tab2" style = "display:none">
 <div class = "upgrade1">
@@ -83,7 +83,7 @@ bubbleIncrement = 1
 bubbleList = []
 Bubble.addEventListener("click", (event) => {
     var i = Math.floor(Math.random()*5) + 1
-    pop = new Audio('/sound/pop'+ i + ".mp3")
+    pop = new Audio('/Bubble-Popper/sound/pop'+ i + ".mp3")
     pop.play()
     showParticle()
     clickBubbles()
@@ -92,7 +92,7 @@ Bubble.addEventListener("click", (event) => {
 
 function showParticle() {
     var img = document.createElement("img");
-    img.src = "/images/bubble.png";
+    img.src = "/Bubble-Popper/images/bubble.png";
     img.style.width = "20px";
     img.style.height = "20px";
 
